@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 h1 {
     color:white;
     font-size: 50px;
@@ -33,9 +36,21 @@ p {
     font-size: 20px;
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
-    padding-right: 100px;
+    padding-right: 305px;
+    padding-left: 161px;
     padding-top: 100px;
 }
+a {text-decoration: none;
+}
+a:link {
+    color: white; /* Цвет ссылок */
+   }
+   a:visited {
+    color: white; /* Цвет посещенных ссылок */
+   }
+   a:active {
+    color: rgb(216, 116, 34); /* Цвет активной ссылки */ 
+   } 
 .container {
     background:rgb(223, 147, 147);
     width:100%;
@@ -43,13 +58,15 @@ p {
     margin: 0%;
 }
 .menu {
-    background:rgb(45, 42, 42);
+    background:rgb(30, 33, 42);
 	width:100%;
     height:100px;
     display: grid;
-    grid-template-columns: 30% 30% 40%;
-    
-    
+    grid-template-columns: 35% 30% 35%;;
+    font-family: Arial, Helvetica, sans-serif, bold;
+    font-size: 18px;
+    padding-left: 150px;
+    padding-right: 150px;
  }
  .li {
     color:white;
@@ -57,33 +74,37 @@ p {
     margin: 0%;
     padding-left: 20px;
     padding-right: 20px;
+    height: 95px;
     
  }
  #tel {
     float: left;
     width: 60%;
+    padding-top: 40px;
    
-    
 }
 #onas {
     float: left;
     width: 10%;
+    padding-top: 40px;
 }
 #cat {
     overflow: hidden;
     display: flex;
     flex-flow: row-reverse;
+    padding-top: 40px;
 }
 #Korzina {
     display: block;
     text-align: right;
+    padding-top: 40px;
    
 }
- .about {
-    background:rgb(66, 60, 58);
+.about {
+    background:rgb(63, 65, 70);
     display: flex;
 	justify-content: space-between;
-	height: 300px;
+	height: 410px;
 	margin: auto;
 }
 .about > div {
@@ -92,16 +113,48 @@ p {
     height: 400px;
 }
 .poisk {
-    background: white;
+    position: relative;
+    padding-top: 360px;
     
    
 }
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 300px;
+  
+}
+input, button {
+  outline: none;
+  
+}
+input {
+  width: 520%;
+  height: 42px;
+  padding-left: 15px;
+  border: 3px solid #F9F0DA;
+}
+button {
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: -1300px;
+  cursor: pointer;
+
+}
+input:focus {
+  border-color: rgb(206, 152, 64);
+}
+
+
 .slider {
-    background:#d87422;
+    background:rgb(206, 152, 64);
     display: flex;
 	justify-content: space-between;
-	height: 300px;
-    margin: auto;
+	height: 400px;
+    padding-top: 36px;
 }
     #Sltext {
         float: center;
@@ -131,12 +184,13 @@ p {
         height: 200px;
         margin: 20px;
         background:rgb(247, 247, 247);
-        border: 3px solid #fafafc;
+    }    
+    .STcatalog{
         padding-top: 10px;
         padding-left: 30px;
-      
-   
     }
+   
+    
     ul {
         display: inline;
     }
