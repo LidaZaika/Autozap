@@ -38,7 +38,7 @@ p {
     font-size: 20px;
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
-    padding-right: 305px;
+    text-align: center;
     padding-left: 161px;
     padding-top: 100px;
 }
@@ -131,7 +131,7 @@ input, button {
   ;
 }
 input {
-  width: 520%;
+  
   height: 42px;
   padding-left: 15px;
   border: 3px solid #F9F0DA;
@@ -172,8 +172,7 @@ input:focus {
     }
 .ST-vse {
     background:rgb(45, 42, 42);
-    padding-left: 200px;
-    padding-right: 200px;
+    
     
     }
     .ST-vse > div {
@@ -183,7 +182,7 @@ input:focus {
 .ST {
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         display: flex;
         height: 800px;
         padding-right: 50px;
