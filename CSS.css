@@ -23,6 +23,9 @@ h2 {
     padding-top: 20px;
     
 }
+h5 {
+    font-size: 16px;
+}
 h6 {
     color:rgb(216, 116, 34);
     font-size: 20px;
@@ -121,7 +124,7 @@ a:link {
 form {
   position: relative;
   width: 300px;
-  
+  margin-top: 360px;
 }
 input, button {
   outline: none;
@@ -318,7 +321,8 @@ input:focus {
     padding-top: 30px;
 }
 .socseti {
-    list-style: none;
+   display: block;
+   padding-top: 100px;
 }
 .footer-menu {
     color: #6f6d6d;
