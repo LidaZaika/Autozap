@@ -17,7 +17,6 @@ h2 {
     font-size: 50px;
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(45, 42, 42);
     font-size: 20px;
     text-align: center;
     margin: 0%;
@@ -65,8 +64,8 @@ a:link {
     grid-template-columns: 35% 30% 35%;;
     font-family: Arial, Helvetica, sans-serif, bold;
     font-size: 18px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
  }
  .li {
     color:white;
@@ -126,13 +125,14 @@ form {
 }
 input, button {
   outline: none;
-  
+  ;
 }
 input {
   width: 520%;
   height: 42px;
   padding-left: 15px;
   border: 3px solid #F9F0DA;
+
 }
 button {
   border: none;
@@ -142,7 +142,7 @@ button {
   top: 0;
   right: -1300px;
   cursor: pointer;
-
+  
 }
 input:focus {
   border-color: rgb(206, 152, 64);
@@ -167,21 +167,30 @@ input:focus {
         overflow: hidden;
         width: 50%;
     }
+.ST-vse {
+    background:rgb(45, 42, 42);
+    padding-left: 200px;
+    padding-right: 200px;
+    
+    }
+    .ST-vse > div {
+        min-height: 900px;
+        height: auto;
+    }
 .ST {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
         display: flex;
         height: 800px;
-        background:rgb(45, 42, 42);
         padding-right: 50px;
         padding-left: 50px;
         
     }
     .ST > div {
         
-        width:500px;
-        height: 200px;
+        width: 420px;
+        height: 240px;
         margin: 20px;
         background:rgb(247, 247, 247);
     }    
@@ -247,7 +256,7 @@ input:focus {
     }
     #Shetkifoto {
         overflow: hidden;
-        width: 50%;
+        width: 48%;
     }
     #Insttext {
         float: left;
@@ -270,3 +279,48 @@ input:focus {
     .fotovbloke {
         background-image:url(/images/фото8.png);
     }
+    
+    .bukva {
+        color:rgb(206, 152, 64);
+        margin-left: -30px;
+        position: absolute;
+        font-weight: bold;
+    }
+    .carblock {
+        background: rgb(30, 33, 42);
+        padding: 25px;
+    }
+    .spisokcar {
+        padding-top: 40px;
+        margin-bottom: 25px;
+        display: flex;
+        flex: 5;
+        justify-content: space-between;
+    }
+    .marki {
+        list-style: none;
+    }
+    .top {
+        margin-left: 200px;
+        margin-right: 200px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: rgb(30, 33, 42);
+      
+    }
+.footer {
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: rgb(30, 33, 42);
+    border-top: 7px solid rgb(206, 152, 64);
+    padding-top: 30px;
+}
+.socseti {
+    list-style: none;
+}
+.footer-menu {
+    color: #6f6d6d;
+    font-family: Arial, Helvetica, sans-serif;
+}
