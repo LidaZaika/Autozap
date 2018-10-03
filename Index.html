@@ -5,44 +5,90 @@
  	<title>AutoParts</title>
  	<link rel="stylesheet" href="CSS.css">
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
-	
+	<link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
  </head>
  <body>
 	<div class="container">
-		<div class="menu">
-				<div class="li">
+		<header>
+
+					<div class="menustart">
+						<ul>
+						<li id="tel">(812) 123-45-67</li>
+						<li id="onas"><a href="Index.html"> Онас</a></li>
+						<li id="cat"><a href="Index.html">Каталог</a></li>
+						</ul>
+					</div>
 			
-						<div id="tel">(812) 123-45-67</div>
-						<div id="onas"><a href="Index.html"> О нас</a></div>
-						<div id="cat"><a href="Index.html">Каталог</a></div>
+					<div class="logotip">
+						<ul>
+						<li id="logo">AUTO PARTS</li>
+						<li id="logo2">Автомобильные детали</li>
 					
-				</div>
+						</ul>	
+						
+					</div>	
 				
-				<div class="li">
-						<img height="100px" width="65%" src="images/zap6.png">
-				</div>
-				<div class="li">
-					<div id="Korzina">Корзина</div>
-				</div>
-		<form>
-			<input type="text" placeholder="Поиск...">
-			<button type="submit"><img src="images/lupa.png" width="20px" alt="Найти" 
-						style="vertical-align: middle"></button>
-		</form>		
-		</div>
+					<div id="Korzina"><a href="Index.html"><img height="40px" width="40px" 
+						src="images/Профиль.png"></a>
+										<a href="Index.html"><img height="40px" width="40px" 
+						src="images/Корзина.png"></a>
+					</div>
+					
+			
+		</header>
 		<div class="about">
+
 			<div><p>50 млн предложений оригинальных автозапчастей 
-				по актуальным ценам с курьерской доставкой по городу и области</p> </div>
+				по актуальным ценам с курьерской доставкой по городу и области</p> 
+				<form>
+						<p><input type="search" name="q" placeholder="Поиск по сайту..."> 
+						 
+				</form>
+				
+			</div>
 			<div><img height="410px" width="100%" src="images/фото4.jpg"></div>
 		</div>
+			<div class="carousel-wrapper" style="height: 500px">
+				<span id="target-item-1"></span>
+				<span id="target-item-2"></span>
+				<span id="target-item-3"></span>
 		
-		<div class="slider">
-			<div id="Sltext">
-					<p>Верните, если передумали</p>
+			
+			<div class="carousel-item item-1 light">
+				<div>
+					<a class="arrow arrow-prev" href="#target-item-1"></a>
+					<a class="arrow arrow-next" href="#target-item-2"></a>
+					<ul>
+					<li><h3>Верните, если передумали!</h3></li>
+					<li><p>В течение недели Вы можете вернуть товары, купленные в нашем магазине</p></li>
+				</ul>
+				</div>
+				
+				<div><img height="400px" width="400px" src="images/Возврат.png"></div>
+				
 			</div>
-			<div id="Slfoto"><img height="200px" width="50%"
-					src="images/возврат.png">
+			<div class="carousel-item item-2">
+				<a class="arrow arrow-prev" href="#target-item-1"></a>
+				<a class="arrow arrow-next" href="#target-item-3"></a>
+				<div>
+					<ul>
+						<li><h3>Шестая канистра в подарок!</h3></li>
+						<li><p>При покупке пяти любых одинаковых наименований моторных масел</p></li>
+					</ul>
+				</div>	
+				<div><img height="100%" width="100%" src="images/Слайд1.jpg"></div>
+
 			</div>
+
+			<div class="carousel-item item-3">
+				<h2>Item 3</h2>
+				<p>Content goes here.</p>
+				<a class="arrow arrow-prev" href="#target-item-2"></a>
+				<a class="arrow arrow-next" href="#target-item-1"></a>
+			</div>
+					
+			</div>
+			
 		</div>
 		<div class="ST-vse">
 			<h2>Сопутствующие товары</h2>
@@ -81,8 +127,8 @@
 				</div>
 		
 				<div>
-				<img height="150px" width="100%"
-					src="images/фото8.png">
+				<img height="100%" width="100%"
+					src="images/фото8.jpg">
 				</div>
 				<div>
 					<div id="Electtext"class="STcatalog">
@@ -102,7 +148,7 @@
 					 Каркасные <br>
 					 Гибридные <br>
 					</div>
-					<div id="Shetkifoto"class="STcatalog"><img height="150px" width="100%"
+					<div id="Shetkifoto"class="STcatalog"><img height="100%" width="100%"
 					src="images/фото10.png">
 					</div>
 				</div>	
@@ -129,7 +175,7 @@
 					</div>
 				</div>
 				<div class="fotovbloke">
-				<img height="100%" width="100%" src="images/фото13.png">
+				<img height="100%" width="100%" src="images/фото13.jpg">
 				</div>
 			</div>
 		</div>
@@ -343,27 +389,42 @@
 			
 		</div>
 	<div class="footer">
-			<div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.0163431079598!2d30.35433431623017!3d59.93187098187372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a4f393ff79%3A0x56bdbf13d5255400!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDEwNCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTAyNQ!5e0!3m2!1sru!2sru!4v1538047673551" 
-					width="600" height="350" frameborder="0" style="border:0" allowfullscreen>
-					</iframe>
-			</div>
-			<div class="socseti">
-				
-					<img src="images/vk.png" width="50" height="50">
-					<img src="images/fk.png" width="50" height="50">
-						
-
-			</div>
-			<div class="footer-menu">
+	
+			<div class="footer-menu right" class="right">		
 				<h5>AUTO PARTS</h5>
-				Оплата<br>
-				Возврат<br>
-				О Компании<br>
-				Каталог<br>
-				Сопутствующие товары<br>
-				Контакты<br>
+				<a href="Index.html">Оплата</a><br>
+				<a href="Index.html">Возврат</a><br>
+				<a href="Index.html">О Компании</a><br>
 			</div>
+			<div class="footer-menu left" class="left">
+				<a href="Index.html">Каталог</a><br>
+				<a href="Index.html">Сопутствующие товары</a><br>
+				<a href="Index.html">Контакты</a><br>
+			</div>	
+				
+			<div  class="socseti">
+					
+				<a href="Index.html"><img src="images/vk.png" width="50" height="50"></a>
+				<a href="Index.html"><img src="images/fb.png" width="50" height="50"></a>
+				<a href="Index.html"><img src="images/tg.png" width="50" height="50"></a>
+						
+			</div>
+						
+			 
+		<div class="frame">
+						
+					<iframe  src=
+					"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.0163431079598!2d30.
+					!3d59.93187098187372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a4f393ff79%
+					3A0x56bdbf13d5255400!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDEwNCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LH
+					Rg9GA0LMsIDE5MTAyNQ!5e0!3m2!1sru!2sru!4v1538047673551" 
+					width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen>
+					</iframe>
+		</div>	
+					
+			
+			
+			
 	</div>
 </div>
 </body>

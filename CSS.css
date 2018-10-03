@@ -7,24 +7,32 @@ h1 {
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(45, 42, 42);
-    
     text-align: center;
-    margin: 0%;
-    
+    margin: 0%;   
 }
 h2 {
     color:white;
-    font-size: 50px;
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: center;
     margin: 0%;
-    padding-top: 20px;
-    
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
+h3 {
+    color:#1E212A;
+    font-size: 36px;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 70px;
+}
+
 h5 {
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h6 {
     color:rgb(216, 116, 34);
@@ -35,12 +43,12 @@ h6 {
 }
 p {
     color:white;
-    font-size: 20px;
+    font-size: 26px;
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding-left: 161px;
-    padding-top: 100px;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 10%;
 }
 a {text-decoration: none;
 }
@@ -50,134 +58,195 @@ a:link {
    a:visited {
     color: white; /* Цвет посещенных ссылок */
    }
-   a:active {
-    color: rgb(216, 116, 34); /* Цвет активной ссылки */ 
-   } 
+
+   a:hover {
+       color: rgb(206, 152, 64);
+   }
 .container {
     background:rgb(223, 147, 147);
     width:100%;
     height:1000px;
     margin: 0%;
 }
-.menu {
-    background:rgb(30, 33, 42);
+
+header {
+    background:#1E212A;
 	width:100%;
     height:100px;
-    display: grid;
-    grid-template-columns: 35% 30% 35%;;
     font-family: Arial, Helvetica, sans-serif, bold;
-    font-size: 18px;
-    padding-left: 200px;
-    padding-right: 200px;
- }
- .li {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
     color:white;
-    size: 5px;
-    margin: 0%;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 95px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     
  }
- #tel {
-    float: left;
-    width: 60%;
-    padding-top: 40px;
-   
+ @media (max-width: 870px)
+ {
+    header {
+      /* Меняем оси шапки, делая её вертикальной. */
+    flex-direction: column;
+      /* Выравнивание элементов шапки с начала (по левому краю). */
+    align-items: flex-start;
+     height: auto;
+     justify-content: start;
+    }
+ }
+
+
+.menustart {
+   padding-left: 15px; 
+}    
+
+.menustart ul {
+        margin: 0; 
+        padding: 4px;
+       }
+.menustart li {
+        display: inline;
+        margin-right: 5px; 
+        padding: 3px; 
+       }
+
+.logotip {
+    padding-right: 190px;
+    padding-bottom: 10px;
+    
 }
-#onas {
-    float: left;
-    width: 10%;
-    padding-top: 40px;
+.logotip ul {
+    list-style-type: none;
 }
-#cat {
-    overflow: hidden;
-    display: flex;
-    flex-flow: row-reverse;
-    padding-top: 40px;
+#logo {
+    font-family: Baumans, cursiv;
+    font-size: 36px;
+}
+#logo2 {
+text-align: center;
+font-size: 16px;
 }
 #Korzina {
-    display: block;
-    text-align: right;
-    padding-top: 40px;
-   
+padding-right: 40px;    
 }
+
 .about {
-    background:rgb(63, 65, 70);
+    background:#3a3b3c;
     display: flex;
 	justify-content: space-between;
 	height: 410px;
-	margin: auto;
+    margin: auto;
+    padding: 0;
+    
+  
 }
+  
 .about > div {
 	
 	width: 50%;
     height: 400px;
 }
-.poisk {
-    position: relative;
-    padding-top: 360px;
-    
-   
-}
-* {box-sizing: border-box;}
 form {
-  position: relative;
-  width: 300px;
-  margin-top: 360px;
-}
-input, button {
-  outline: none;
-  ;
+    padding-left: 10%;
+    padding-top: 40px;
 }
 input {
-  
-  height: 42px;
-  padding-left: 15px;
-  border: 3px solid #F9F0DA;
-
-}
-button {
-  border: none;
-  height: 42px;
-  width: 42px;
-  position: absolute;
-  top: 0;
-  right: -1300px;
-  cursor: pointer;
-  
-}
-input:focus {
-  border-color: rgb(206, 152, 64);
+    background-image: url('http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s25/search.png');  
+    background-repeat: no-repeat;   
+    background-position: 100%;
+    width: 195%;
+    position: relative;
+    margin-top: 80px;
+    height: 40px;
+    padding-left: 10px;
 }
 
-
-.slider {
-    background:rgb(206, 152, 64);
+.carousel-wrapper{
+    position:relative;
+}
+.carousel-item  {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity:0;
+    transition:all0.5 sease-in-out;
+    background-color: #3a3b3c;
     display: flex;
-	justify-content: space-between;
-	height: 400px;
-    padding-top: 36px;
+    justify-content: space-around;
+    padding-top: 35px;
 }
-    #Sltext {
-        float: center;
-        width: 50%;
-        display: table;
+.carousel-item ul {
+    list-style-type: none;
+}
+.carousel-item p {
+    font-size: 18px;
+    text-align: center;
+}
+.light {
+    background-color: rgb(206, 152, 64);
+}
+.arrow{
+    position:absolute;
+    top:0;
+    display:block;
+    width:50px;
+    height:100%;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    background:url("images/стрелка.png")50% 50%/20px no-repeat;
+     
+}
+.arrow.arrow-prev{
+    left:0;
+  
+}   
+.arrow.arrow-next{
+    right:0;
+    transform:rotate(180deg);
+}
+          
+@media(max-width:480px){
+    .arrow,&.light.arrow{
+    background-size:10px;
+    background-position:10px 50%;
+    }
+}
         
+   
+[id^="target-item"]{
+    display:none;
+}
        
-    }
-    #Slfoto {
-        overflow: hidden;
-        width: 50%;
-    }
-.ST-vse {
-    background:rgb(45, 42, 42);
+.item-1{
+    z-index:2;
+    opacity:1;
+}
+     
+   
+*:target~.item-1{ 
+    opacity:0;
+}
+     
     
+#target-item-1:target~.item-1{
+    opacity:1;
+}
+     
+#target-item-2:target~.item-2,#target-item-3:target~.item-3{
+    z-index:3;
+    opacity:1;
+}
+.ST-vse {
+    background:#1E212A;
+    padding-top: 20px;
     
     }
     .ST-vse > div {
         min-height: 900px;
         height: auto;
+        
     }
 .ST {
         flex-wrap: wrap;
@@ -195,6 +264,8 @@ input:focus {
         height: 240px;
         margin: 20px;
         background:rgb(247, 247, 247);
+       
+        justify-content: center;
     }    
     .STcatalog{
         padding-top: 10px;
@@ -213,7 +284,7 @@ input:focus {
     }
     #Autohimtext {
         float: left;
-        width: 50%;
+        width: 30%;
         display: table;
         
        
@@ -224,7 +295,7 @@ input:focus {
     }
     #Shintext {
         float: left;
-        width: 50%;
+        width: 30%;
         display: table;
         
        
@@ -235,7 +306,7 @@ input:focus {
     }
     #Disctext {
         float: left;
-        width: 50%;
+        width: 30%;
         display: table;   
     }
     #Discfoto {
@@ -244,7 +315,7 @@ input:focus {
     }
     #Electtext {
         float: left;
-        width: 50%;
+        width: 30%;
         display: table;   
     }
     #Electfoto {
@@ -253,16 +324,17 @@ input:focus {
     }
     #Shetkitext {
         float: left;
-        width: 50%;
+        width: 30%;
         display: table;   
     }
     #Shetkifoto {
         overflow: hidden;
-        width: 48%;
+        width: 42%;
+        padding-top: 50px;
     }
     #Insttext {
         float: left;
-        width: 50%;
+        width: 30%;
         display: table;   
     }
     #Instfoto {
@@ -271,7 +343,7 @@ input:focus {
     }
     #Maslotext {
         float: left;
-        width: 50%;
+        width: 30%;
         display: table;   
     }
     #Maslofoto {
@@ -303,27 +375,61 @@ input:focus {
         list-style: none;
     }
     .top {
-        margin-left: 200px;
-        margin-right: 200px;
+        margin-left: 10%;
+        margin-right: 10%;
         font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
         background: rgb(30, 33, 42);
       
     }
 .footer {
-    display: flex;
-    flex: 3;
-    flex-direction: row;
-    justify-content: space-evenly;
+    
     background: rgb(30, 33, 42);
-    border-top: 7px solid rgb(206, 152, 64);
-    padding-top: 30px;
+    border-top: 15px solid rgb(206, 152, 64);
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 250px 150px;
 }
 .socseti {
    display: block;
-   padding-top: 100px;
+   grid-column-start: 1;
+   grid-row-start: 2;
+   text-align: right;
 }
+
+  
 .footer-menu {
     color: #6f6d6d;
     font-family: Arial, Helvetica, sans-serif;
+     
+}
+&:right {
+   grid-column-start: 1;
+   grid-row-start: 1;
+   
+}
+&:left {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    
+}
+.footer-menu > a {
+    color: #6f6d6d;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+   
+}
+
+.frame {
+    grid-column-start: 3;
+}
+.left {
+    text-align: left;
+    padding-top: 125px;
+    padding-left: 80px;
+}
+.right {
+    text-align: left;
+    padding-left: 65%;
+    padding-top: 55px;
 }
