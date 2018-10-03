@@ -419,6 +419,11 @@ input {
     line-height: 2;
    
 }
+.footer-menu > a:hover {
+    color: rgb(206, 152, 64);
+}
+
+
 
 .frame {
     grid-column-start: 3;
