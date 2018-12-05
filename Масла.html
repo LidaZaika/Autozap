@@ -1,0 +1,438 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 	<title>AutoParts</title>
+ 	<link rel="stylesheet" href="CSS.css">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
+	<script src="JS.js"></script>
+ </head>
+ <body>
+		<header>
+			<div class="menustart">
+				<ul>
+					<li id="tel">(812) 123-45-67</li>
+					<li id="onas"><a href="Index.html"> Онас</a></li>
+					<li id="cat"><a href="Масла.html">Каталог</a></li>
+				</ul>
+			</div>
+			
+				<div class="logotip">
+					<div id="logo">AUTO PARTS</div>
+					<div id="logo2">автомобильные детали</div>
+				</div>	
+				<div id="Bag">
+					<a href="Index.html"><img height="40px" width="40px" 
+					src="images/Профиль.png"></a>
+					<a href="Корзина.html"><img height="40px" width="40px" 
+						src="images/Корзина.png"></a>
+				</div>	
+		</header>
+		<div class="basic-block">
+		<div class="section">
+			<div class="menu-section">
+				<p>Каталог &nbsp;	|&nbsp;	Сопутствующие товары &nbsp;	|&nbsp;	Масла &nbsp;|&nbsp;&nbsp;	</p>
+				<h3>Масла моторные</h3>
+			</div>
+			<div class="page">
+				Товары 1-12 из 1000
+			</div>
+		</div>	
+
+		<!-- Основное поле поиска-->
+		<div class="price-all">
+			<div class="menu-horizontalalt">
+				<img height="30px" width="50px" src="images/hamburger-menu.png"> <SPAN>Фильтры</SPAN>
+			</div>
+			<div class="menu-horizontal">
+				<div class="hamburger-menu">
+					<img height="20px" width="20px" src="images/hamburger-menu.png">&nbsp;&nbsp;
+					<p>Каталог ТО и товары</p>
+				</div>
+				<div class="menu-sort">
+					<div class="sort-all">
+				
+						<ul class="sort">
+						<li>Сортировать по:&nbsp;&nbsp;</li>
+						<li><a>наименованию &darr;&nbsp;&nbsp;</a></li>
+						<li><a>цене &darr;&nbsp;&nbsp;</a></li> 
+						<li><a>популярности &uarr;&nbsp;&nbsp;</a>	</li>
+						</ul>
+					
+					</div>
+					<div class="sort-layout">
+						<div>Компоновка </div>
+						<div>&nbsp;&nbsp;<img id="sortinline" onclick="sortinline()" src="images/компоновка1.png">&nbsp;&nbsp; <img id="sortflex" onclick="sortflex()" src="images/компоновка2.png"> </div>
+					</div>
+					<div>
+					Показывать по&nbsp;&nbsp; 8&nbsp;&nbsp; 12&nbsp;&nbsp; 16&nbsp;&nbsp; 24&nbsp;&nbsp;
+					</div>
+				</div>
+					
+			</div>
+			
+		<div class="price">
+			
+			<!-- Левое вертикальное меню-->
+			<div class="vertical">
+		
+				<div class="selection">
+					<p> <font color="#ce9840" ><b>Производитель</b></font></p>
+					<div>
+						<p><input type="checkbox" name="option1" value="a1" id="box-1"><label for="box-1" class="name-maker">Castrol</label><Br>
+						<input type="checkbox" name="option2" value="a2" id="box-2"><label for="box-2"class="name-maker">Ford</label><Br>
+						<input type="checkbox" name="option3" value="a3" id="box-3"><label for="box-3"class="name-maker">General Motors</label><Br> 
+						<input type="checkbox" name="option4" value="a4" id="box-4"><label for="box-4"class="name-maker">Liqui Moly</label><Br> 
+						<input type="checkbox" name="option5" value="a5" id="box-5"><label for="box-5"class="name-maker">Mobil</label><Br>
+						<input type="checkbox" name="option6" value="a6" id="box-6"><label for="box-6"class="name-maker">Nissan</label><Br> 
+						<input type="checkbox" name="option7" value="a7" id="box-7"><label for="box-7"class="name-maker">Total</label><Br>
+						<input type="checkbox" name="option8" value="a8" id="box-8"><label for="box-8"class="name-maker" id="one">Еще один</label>
+						</p>
+						<p class="dot" onclick="one()">Все производители </p>
+					</div>
+					<div class="price-range">
+						<p> <font color="#ce9840" ><b> Ценовой диапазон, руб.</b></font></p>
+						<p><input id="slider" type="range" min="0" max="100" step="1" value="50"></p> 
+					</div>
+					<div class="characteristic-OIL">
+						<p onclick="sae()"><b>Вязкость SAE</b> &nbsp;<img src="images/Стрелка вниз.png">	</p>
+							<div id="sae2" style="display:none">
+								<input type="checkbox"  id="5W"><label for="5W" class="SAE" color="white">5W</label>
+								<input type="checkbox" id="10W"><label for="10W" class="SAE"color="white">10W</label>
+							</div>
+					</div>
+					<div class="characteristic-OIL">
+						<p onclick="acea()"><b>Классификация ACEA</b> &nbsp;<img  src="images/Стрелка вниз.png"></p>	
+							<div id="acea2" style="display:none">
+								<input type="checkbox"  id="a"><label for="a" class="SAE" color="white">A</label>
+								<input type="checkbox" id="c"><label for="c" class="SAE"color="white">C</label>
+								<input type="checkbox" id="e"><label for="e" class="SAE"color="white">E</label>
+							</div>
+					</div>
+					<div class="characteristic-OIL">
+						<p onclick="api()"><b>Классификация API</b> <img src="images/Стрелка вниз.png"></p>	
+						<div id="api2" style="display:none">
+								<input type="checkbox"  id="apis"><label for="apis" class="SAE" color="white">S</label>
+								<input type="checkbox" id="apic"><label for="apic" class="SAE"color="white">C</label>
+							</div>
+					</div>
+					<div class="characteristic-OIL">
+						<p> <font color="#ce9840" ><b> Объем, л</b></font></p>
+						<p><input type="checkbox" name="option1" value="a1" id="box-1"><label for="box-1" class="name-maker">0,1</label><Br>
+						<input type="checkbox" name="option2" value="a2" id="box-2"><label for="box-2"class="name-maker">0.25</label><Br>
+						<input type="checkbox" name="option3" value="a3" id="box-3"><label for="box-3"class="name-maker">0.5</label><Br> 
+						<input type="checkbox" name="option4" value="a4" id="box-4"><label for="box-4"class="name-maker">0.6</label><Br> 
+						<input type="checkbox" name="option5" value="a5" id="box-5"><label for="box-5"class="name-maker">1</label><Br>
+						
+						</p>
+						<p><a href="#" class="dot">Смотреть весь список</a></p>
+					</div>
+					<div class="filters-reset" onclick="alert('Сейчас снимутся все галочки'); return false;">
+						<p> <font color="#ce9840"><b> Сбросить все фильтры</b></font></p>
+					</div>
+
+				</div>	
+			</div>
+				<div class="oil" id="oil">
+						
+						<div class="oilcatalog">
+							<a href="Page product.html"><ul class="oildiv">
+								<li class="oilfoto"><img height="60%" width="60%"
+									src="images/масло.png">
+								</li>
+								<li class="oiltxt">
+									<font color="black" ><b>Mobil ULTRA</b></font>
+								</li>
+								<li class="oiltxt2"	>
+										1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+								</li>
+								<li class="oiltxt3"	>
+										завтра после 00:30
+								</li>
+								<li class="oiltxt4"	>
+										<b>От 325р.</b>
+								</li>
+							</ul>
+							</a>
+						</div>
+						<div class="oilcatalog">
+							<a href="Page product.html"><ul class="oildiv">
+								<li class="oilfoto"><img height="60%" width="60%"
+									src="images/масло.png">
+								</li>
+								<li class="oiltxt">
+									<font color="black" ><b>Mobil ULTRA</b></font>
+								</li>
+								<li class="oiltxt2"	>
+										1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+								</li>
+								<li class="oiltxt3"	>
+										завтра после 00:30
+								</li>
+								<li class="oiltxt4"	>
+										<b>От 325р.</b>
+								</li>
+							</ul>
+							</a>
+						</div>			
+						<div class="oilcatalog">
+							<a href="Page product.html"><ul class="oildiv">
+								<li class="oilfoto"><img height="60%" width="60%"
+									src="images/масло.png">
+								</li>
+								<li class="oiltxt">
+									<font color="black" ><b>Mobil ULTRA</b></font>
+								</li>
+								<li class="oiltxt2"	>
+										1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+								</li>
+								<li class="oiltxt3"	>
+										завтра после 00:30
+								</li>
+								<li class="oiltxt4"	>
+										<b>От 325р.</b>
+								</li>
+							</ul>
+							</a>
+						</div>	
+						<div class="oilcatalog">
+							<a href="Page product.html"><ul class="oildiv">
+								<li class="oilfoto"><img height="60%" width="60%"
+									src="images/масло.png">
+								</li>
+								<li class="oiltxt">
+									<font color="black" ><b>Mobil ULTRA</b></font>
+								</li>
+								<li class="oiltxt2"	>
+										1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+								</li>
+								<li class="oiltxt3"	>
+										завтра после 00:30
+								</li>
+								<li class="oiltxt4"	>
+										<b>От 325р.</b>
+								</li>
+							</ul>
+							</a>
+						</div>
+						<div class="oilcatalog">
+							<a href="Page product.html"><ul class="oildiv">
+								<li class="oilfoto"><img height="60%" width="60%"
+									src="images/масло.png">
+								</li>
+								<li class="oiltxt">
+									<font color="black" ><b>Mobil ULTRA</b></font>
+								</li>
+								<li class="oiltxt2"	>
+										1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+								</li>
+								<li class="oiltxt3"	>
+										завтра после 00:30
+								</li>
+								<li class="oiltxt4"	>
+										<b>От 325р.</b>
+								</li>
+							</ul>
+							</a>
+						</div>				
+					<div class="oilcatalog">
+						<a href="Page product.html"><ul class="oildiv">
+							<li class="oilfoto"><img height="60%" width="60%"
+								src="images/масло.png">
+							</li>
+							<li class="oiltxt">
+								<font color="black" ><b>Mobil ULTRA</b></font>
+							</li>
+							<li class="oiltxt2"	>
+									1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+							</li>
+							<li class="oiltxt3"	>
+									завтра после 00:30
+							</li>
+							<li class="oiltxt4"	>
+									<b>От 325р.</b>
+							</li>
+						</ul>
+						</a>
+					</div>
+					<div class="oilcatalog">
+						<a href="Page product.html"><ul class="oildiv">
+							<li class="oilfoto"><img height="60%" width="60%"
+								src="images/масло.png">
+							</li>
+							<li class="oiltxt">
+								<font color="black" ><b>Mobil ULTRA</b></font>
+							</li>
+							<li class="oiltxt2"	>
+									1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+							</li>
+							<li class="oiltxt3"	>
+									завтра после 00:30
+							</li>
+							<li class="oiltxt4"	>
+									<b>От 325р.</b>
+							</li>
+						</ul>
+						</a>
+					</div>
+					<div class="oilcatalog">
+						<a href="Page product.html"><ul class="oildiv">
+							<li class="oilfoto"><img height="60%" width="60%"
+								src="images/масло.png">
+							</li>
+							<li class="oiltxt">
+								<font color="black" ><b>Mobil ULTRA</b></font>
+							</li>
+							<li class="oiltxt2"	>
+									1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+							</li>
+							<li class="oiltxt3"	>
+									завтра после 00:30
+							</li>
+							<li class="oiltxt4"	>
+									<b>От 325р.</b>
+							</li>
+						</ul>
+						</a>
+					</div>			
+					<div class="oilcatalog">
+						<a href="Page product.html"><ul class="oildiv">
+							<li class="oilfoto"><img height="60%" width="60%"
+								src="images/масло.png">
+							</li>
+							<li class="oiltxt">
+								<font color="black" ><b>Mobil ULTRA</b></font>
+							</li>
+							<li class="oiltxt2"	>
+									1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+							</li>
+							<li class="oiltxt3"	>
+									завтра после 00:30
+							</li>
+							<li class="oiltxt4"	>
+									<b>От 325р.</b>
+							</li>
+						</ul>
+						</a>
+					</div>	
+					<div class="oilcatalog">
+						<a href="Page product.html"><ul class="oildiv">
+							<li class="oilfoto"><img height="60%" width="60%"
+								src="images/масло.png">
+							</li>
+							<li class="oiltxt">
+								<font color="black" ><b>Mobil ULTRA</b></font>
+							</li>
+							<li class="oiltxt2"	>
+									1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+							</li>
+							<li class="oiltxt3"	>
+									завтра после 00:30
+							</li>
+							<li class="oiltxt4"	>
+									<b>От 325р.</b>
+							</li>
+						</ul>
+						</a>
+					</div>
+					<div class="oilcatalog">
+						<a href="Page product.html"><ul class="oildiv">
+							<li class="oilfoto"><img height="60%" width="60%"
+								src="images/масло.png">
+							</li>
+							<li class="oiltxt">
+								<font color="black" ><b>Mobil ULTRA</b></font>
+							</li>
+							<li class="oiltxt2"	>
+									1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+							</li>
+							<li class="oiltxt3"	>
+									завтра после 00:30
+							</li>
+							<li class="oiltxt4"	>
+									<b>От 325р.</b>
+							</li>
+						</ul>
+						</a>
+					</div>				
+				<div class="oilcatalog">
+					<a href="Page product.html"><ul class="oildiv">
+						<li class="oilfoto"><img height="60%" width="60%"
+							src="images/масло.png">
+						</li>
+						<li class="oiltxt">
+							<font color="black" ><b>Mobil ULTRA</b></font>
+						</li>
+						<li class="oiltxt2"	>
+								1&nbsp;л,&nbsp; Минеральное,&nbsp; 10W-40
+						</li>
+						<li class="oiltxt3"	>
+								завтра после 00:30
+						</li>
+						<li class="oiltxt4"	>
+								<b>От 325р.</b>
+						</li>
+					</ul>
+					</a>
+				</div>
+			</div>
+		</div>	
+			<div class="pages">
+				<p>страницы &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>
+					3</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>4</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a>5</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>6</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a>7</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>8</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A>9</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>10</a>&nbsp;</p>
+			</div>
+			</div>	
+				
+		</div>
+		<div class="footer-line">
+			
+		</div>
+		
+	<div class="footer">
+	
+			<div class="footer-menu right" class="right">		
+				<h5>AUTO PARTS</h5>
+				<a href="Index.html">Оплата</a><br>
+				<a href="Index.html">Возврат</a><br>
+				<a href="Index.html">О Компании</a><br>
+			</div>
+			<div class="footer-menu left" class="left">
+				<a href="Index.html">Каталог</a><br>
+				<a href="Index.html">Сопутствующие товары</a><br>
+				<a href="Index.html">Контакты</a><br>
+			</div>	
+			<div class="join">
+				Присоединяйтесь!
+			</div>
+			<div  class="socseti">
+					
+				<a href="Index.html"><img src="images/vk.png" width="50" height="50"></a>
+				<a href="Index.html"><img src="images/fb.png" width="50" height="50"></a>
+				<a href="Index.html"><img src="images/tg.png" width="50" height="50"></a>
+						
+			</div>
+						
+			 
+		<div class="frame">
+						
+					<iframe  src=
+					"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.0163431079598!2d30.
+					!3d59.93187098187372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a4f393ff79%
+					3A0x56bdbf13d5255400!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDEwNCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LH
+					Rg9GA0LMsIDE5MTAyNQ!5e0!3m2!1sru!2sru!4v1538047673551" 
+					width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen>
+					</iframe>
+		</div>	
+					
+			
+			
+	</div>		
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-1.6.1.min.js" ></script>
+<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+</body>
+</html>

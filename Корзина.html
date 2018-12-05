@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 	<title>AutoParts</title>
+ 	<link rel="stylesheet" href="CSS.css">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Baumans" rel="stylesheet">
+	<script src="JS.js"></script>
+ </head>
+ <body>
+		<header>
+			<div class="menustart">
+				<ul>
+					<li id="tel">(812) 123-45-67</li>
+					<li id="onas"><a href="Index.html"> Онас</a></li>
+					<li id="cat"><a href="Масла.html">Каталог</a></li>
+				</ul>
+			</div>
+				<div class="logotip">
+					<div id="logo">AUTO PARTS</div>
+					<div id="logo2">автомобильные детали</div>
+			</div>	
+				<div id="Bag">
+					<a href="Index.html"><img height="40px" width="40px" 
+								src="images/Профиль.png"></a>
+					<a href="Корзина.html"><img height="40px" width="40px" 
+								src="images/Корзина.png"></a>
+				</div>
+		</header>
+		<div class="psk"><input  type="search" name="q" placeholder="например, с365">
+		</div>
+		<div class="basic-block">
+		<div class="section">
+			<div class="menu-section">
+				<h3>Корзина</h3>
+			</div>
+			<div class="page">
+                <a>Оплата &nbsp;&nbsp;</a>
+                <a>Доставка </a>&nbsp;&nbsp;
+                <a>Гарантия</a> &nbsp;&nbsp;
+                <a>Правила возврата</a>
+			</div>
+		</div>	
+
+		<!-- Основное поле поиска-->
+	<div>
+		<div class="articles">
+			 <input id="article0" type="checkbox" onclick="checked()"> &nbsp;&nbsp;&nbsp;<label class="labelarticle0" for="article0">Выбрать все</label>
+		</div>
+		<div class="article"> 
+                <div class="article1"><input type="checkbox" id="article1"></div>
+                <div class="imgarticle"><img  width="180px" src="images/фара.jpg"></div>
+                <div id="name-article"><label for="article1"><b>Фара противотуманная, &nbsp;левая,&nbsp; ASAM, 30483</b></label><br>Артикул: 123456</div>
+                <div class="number">  <button class="btn btn-danger"  onclick="S2()">-</button>
+                    <input class="input" id="vetind" name="vetind"size="10" type="text" value="0">
+                    <button class="btn btn-success"  onclick="S1()">+</button><br>
+                    19 на складе
+                </div>
+                <div><b class="sale">423 р.</b> </div>
+         </div>
+         <div class="article">
+             <div class="article1"><input type="checkbox" id="article2"></div>
+                <div class="imgarticle"><img width="150px"src="images/аккумулятор.jpg"></div>
+                <div id="name-article"><label for="article2"><b>Аккумуляторная батарея Bosch Funstart AGM,<br>
+			12B, 8А/ч, 150А, 0092М60110</b></label><br>Артикул: 123456</div>
+			<div class="number">  <button class="btn btn-danger" onclick="S4()" onclick="summin()">-</button>
+			<input class="input" id="vetind2" name="vetind2" size="10" type="text" value="0">
+			<button class="btn btn-success" onclick="S3()" onclick="sumplus()">+</button><br>
+			21 на складе
+			</div>
+			<div><b class="sale" id="sales1">423 р.</b> </div>
+         </div>
+		 <div class="article">
+				<div class="article1"><input type="checkbox" id="article2"></div>
+				   <div class="imgarticle"><img width="150px"src="images/аккумулятор.jpg"></div>
+				   <div id="name-article"><label for="article3"><b>Аккумуляторная батарея Bosch Funstart AGMC,<br>
+			   12B, 8А/ч, 150А, 0092М60111</b></label><br>Артикул: 123457</div>
+			   <div class="number">  <button class="btn btn-danger" onclick="S5()">-</button>
+			   <input class="input" id="vetind3" name="vetind3" size="10" type="text" value="0">
+			   <button class="btn btn-success" onclick="S6()">+</button><br>
+			   10 на складе
+			   </div>
+			   <div><b class="sale">423 р.</b> </div>
+			</div>
+		 
+			<div class="products">
+				<div>Выбранные товары</div>
+				<div type="number" id="amount">0</div>
+				<div id="sum">0</div>
+            </div>
+			<div class="order">
+				<div class="ordertxt">
+					<p>Вы можете оплатить заказ с баланса личного кабинета</p>
+					<p>Если на балансе есть деньги - заказ оформляется сразу<br/>
+					Если нет - нужно доплатить недостающее<br/>
+					Баланс пополняется:<br/>
+					- наличными в офисе обслуживания;<br/>
+					- через банковский перевод. Деньги идут 3-5 дней;<br/>
+					- при возврате товара;<br/>
+					- в случае отказа от заказа.<br/>
+					</p>
+				</div>
+				<div class="orderbtn">
+					<button><b>Оформить заказ</b></button>
+				</div>
+		 	</div>
+		<div class="footer-line">
+			
+		</div>
+
+	<div class="footer">
+	
+			<div class="footer-menu right" class="right">		
+				<h5>AUTO PARTS</h5>
+				<a href="Index.html">Оплата</a><br>
+				<a href="Index.html">Возврат</a><br>
+				<a href="Index.html">О Компании</a><br>
+			</div>
+			<div class="footer-menu left" class="left">
+				<a href="Index.html">Каталог</a><br>
+				<a href="Index.html">Сопутствующие товары</a><br>
+				<a href="Index.html">Контакты</a><br>
+			</div>	
+			<div class="join">
+				Присоединяйтесь!
+			</div>
+			<div  class="socseti">
+					
+				<a href="Index.html"><img src="images/vk.png" width="50" height="50"></a>
+				<a href="Index.html"><img src="images/fb.png" width="50" height="50"></a>
+				<a href="Index.html"><img src="images/tg.png" width="50" height="50"></a>
+						
+			</div>
+						
+			 
+		<div class="frame">
+						
+					<iframe  src=
+					"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.0163431079598!2d30.
+					!3d59.93187098187372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a4f393ff79%
+					3A0x56bdbf13d5255400!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDEwNCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LH
+					Rg9GA0LMsIDE5MTAyNQ!5e0!3m2!1sru!2sru!4v1538047673551" 
+					width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen>
+					</iframe>
+		</div>	
+					
+			
+			
+	</div>		
+	</div>
+</div>
+</body>
+</html>
